@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: SERVICE-CAR
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: SERVICE-CAR
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/carservicedb?createDatabaseIfNotExist=true
@@ -13,4 +19,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
+    properties:
+      hibernate:
+        format_sql: true

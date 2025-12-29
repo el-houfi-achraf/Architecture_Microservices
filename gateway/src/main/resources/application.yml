@@ -3,11 +3,17 @@ server:
 
 spring:
   application:
-    name: Gateway
+    name: GATEWAY
   cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: GATEWAY
     discovery:
       enabled: true
-
-eureka:
-  instance:
-    hostname: localhost
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
