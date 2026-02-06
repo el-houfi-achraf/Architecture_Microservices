@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
 </p>
 
-<h1 align="center">🚗 TP23 - Architecture Microservices</h1>
+<h1 align="center">Architecture Microservices</h1>
 <h3 align="center">Système de Gestion de Location de Voitures</h3>
 
 <p align="center">
